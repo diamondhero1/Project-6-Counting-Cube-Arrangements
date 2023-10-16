@@ -8,6 +8,8 @@
 
 class main {
 
+    printf("hello");
+
 };
 
 
