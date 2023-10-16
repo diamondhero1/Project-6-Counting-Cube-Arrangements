@@ -6,6 +6,7 @@
 class main {
 
     printf("yoooo what's good");
+    printf("git puuuuush")
 
 };
 
