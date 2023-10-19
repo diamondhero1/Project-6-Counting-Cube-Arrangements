@@ -10,7 +10,7 @@ class cube {
 public:
     cube();
     int direction = 0;
-    void getDirection();
+    int getDirection();
     virtual void rotate90();
 };
 

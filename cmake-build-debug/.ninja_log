@@ -1,3 +1,6 @@
 # ninja log v5
 1	82	1697733258495308438	build.ninja	2294cffa72a1102b
 0	514	1697647877887589862	CMakeFiles/Project_6_Counting_Cube_Arrangements_.dir/main.cpp.o	13bc910a7deeecc4
+2	113	1697733704648422734	CMakeFiles/Project_6_Counting_Cube_Arrangements_.dir/cubes.cpp.o	aeae806403e6ddf1
+2	620	1697733705153423317	CMakeFiles/Project_6_Counting_Cube_Arrangements_.dir/main.cpp.o	13bc910a7deeecc4
+621	734	1697733705270012040	Project_6_Counting_Cube_Arrangements_	2bfabb9c7cfc33d
