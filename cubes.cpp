@@ -37,9 +37,9 @@ room::room(int dir){
 }
 
 void room::rotate90(){
-    if(direction == 4)
+    if(direction == 6)
     {
-        direction = 1;
+        direction = 3;
     }
     else {
         direction ++;
