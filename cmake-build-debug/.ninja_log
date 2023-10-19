@@ -1,0 +1,5 @@
+# ninja log v5
+0	55	1697737384952622429	CMakeFiles/Project_6_Counting_Cube_Arrangements_.dir/cubes.cpp.o	aeae806403e6ddf1
+0	551	1697737385447727687	CMakeFiles/Project_6_Counting_Cube_Arrangements_.dir/main.cpp.o	13bc910a7deeecc4
+1	564	1697737385461357062	CMakeFiles/Project_6_Counting_Cube_Arrangements_.dir/tower.cpp.o	90fb42be1134b134
+564	619	1697737385517208539	Project_6_Counting_Cube_Arrangements_	54e8d812b8c99d71
