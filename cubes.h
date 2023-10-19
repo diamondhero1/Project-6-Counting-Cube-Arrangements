@@ -10,20 +10,20 @@ class cube {
 public:
     cube();
     int direction = 0;
-    void getDirection();
+    int getDirection();
     virtual void rotate90();
-}
+};
 
 class tunnel: public cube {
 public:
     tunnel(int dir);
     void rotate90();
-}
+};
 
 class room: public cube{
 public:
     room(int dir);
     void rotate90();
-}
+};
 
 #endif //PROJECT_6_COUNTING_CUBE_ARRANGEMENTS_CUBES_H
