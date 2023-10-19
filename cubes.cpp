@@ -3,7 +3,7 @@
 //
 
 #include "cubes.h"
-using namespace std
+using namespace std;
 
 
 cube::cube(){
