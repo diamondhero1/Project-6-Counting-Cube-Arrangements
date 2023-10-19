@@ -9,4 +9,4 @@ add_executable(Project_6_Counting_Cube_Arrangements_
         cubes.cpp
         cubes.h
         main.cpp
-        )
+        tower.cpp)
