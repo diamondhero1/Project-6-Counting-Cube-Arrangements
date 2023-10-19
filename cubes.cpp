@@ -11,21 +11,36 @@ cube::cube(){
 }
 
 void cube::getDirection(){
-
+    return direction;
 }
 
 virtual void cube::rotate90(){
 }
 
 tunnel::tunnel(int dir){
+    direction = dir;
 }
 
 void tunnel::rotate90(){
-
+    if(direction == 2)
+    {
+        direction = 1;
+    }
+    else {
+        direction++;
+    }
 }
 
-room::room(int dir){}
+room::room(int dir){
+    direction = dir;
+}
 
 void room::rotate90(){
-
+    if(direction == 4)
+    {
+        direction = 1;
+    }
+    else {
+        direction ++;
+    }
 }
