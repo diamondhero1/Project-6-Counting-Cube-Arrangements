@@ -15,7 +15,7 @@ tower::tower(cube c1, cube c2, cube c3){
 //vertically flips tower by swapping order of 1st and 3rd item in the array
 void tower::verticalFlip(){
     cube temp = arrangement[0];
-    arrangement[0] = arrangement[3];
+    arrangement[0] = arrangement[2];
     arrangement[0] = temp;
 }
 

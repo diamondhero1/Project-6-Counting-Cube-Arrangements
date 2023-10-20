@@ -10,6 +10,7 @@
 
 class tower {
 public:
+    cube arrangement[3];
     //constructor. puts the 3 passed cubes into the arrangement[] private data.
     tower(cube c1, cube c2, cube c3);
     //Code question: Is this how you do it such that the cubes are able to also be rooms or tunnels, since room & tunnel inherit cube?
@@ -33,8 +34,7 @@ public:
     void printtower();
 
 private:
-    //this is an array of each cubes. [0] = bottom. [1] = middle. [2] = top.
-    cube arrangement[3];
+    //this is an array of each cubes. [0] = bottom. [1] = middle. [2] = top
 };
 
 

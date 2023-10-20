@@ -18,5 +18,6 @@ int main() {
     tower tower1 = tower(c1, t1, r1);
     tower1.printtower();
     tower1.rotate90();
+    tower1.verticalFlip();
     tower1.printtower();
 }
