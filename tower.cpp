@@ -5,7 +5,7 @@
 using namespace std;
 #include <iostream>;
 
-tower::tower(cube c1, cube c2, cube c3){
+tower::tower(cube &c1, cube &c2, cube &c3){
     arrangement[0] = c1;
     arrangement[1] = c2;
     arrangement[2] = c3;
