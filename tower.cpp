@@ -52,3 +52,31 @@ void tower::printtower(){
     cout << arrangement[2]->getDirection();
     cout << "." << endl;
 }
+
+
+void tower::showtower(){
+    cout << "Tower from top to bottom:" << endl;
+    for (int i = 0; i <= 2; ++i) {
+        if (arrangement[i]->getDirection() == 0) {
+            cout << "[  Cube   ]" << endl;
+    }
+        if (arrangement[i]->getDirection() == 1) {
+            cout << "[Tunnel NS]" << endl;
+        }
+        if (arrangement[i]->getDirection() == 2) {
+            cout << "[Tunnel EW]" << endl;
+        }
+        if (arrangement[i]->getDirection() == 3) {
+            cout << "[ Room N  ]" << endl;
+        }
+        if (arrangement[i]->getDirection() == 4) {
+            cout << "[ Room E  ]" << endl;
+        }
+        if (arrangement[i]->getDirection() == 5) {
+            cout << "[ Room S  ]" << endl;
+        }
+        if (arrangement[i]->getDirection() == 6) {
+            cout << "[ Room W  ]" << endl;
+        }
+    }
+}
