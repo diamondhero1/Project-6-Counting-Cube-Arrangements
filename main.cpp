@@ -18,9 +18,11 @@ int main() {
     tower1.printtower();
     tower1.verticalFlip();
     tower1.printtower();
+
     cube c2 = cube();
     tunnel t2 = tunnel(2);
     room r2 = room(4);
     tower tower2 = tower(&r2, &t2, &c2);
     cout << tower1.Equals(tower2) << endl;
+    tower1.showtower();
 }

@@ -32,7 +32,11 @@ public:
 
     void printtower();
 
+
     bool Equals(tower other);
+
+    void showtower();
+
 
 private:
     //this is an array of each cubes. [0] = bottom. [1] = middle. [2] = top.
