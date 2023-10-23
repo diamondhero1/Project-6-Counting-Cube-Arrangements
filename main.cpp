@@ -19,4 +19,5 @@ int main() {
     tower1.printtower();
     tower1.verticalFlip();
     tower1.printtower();
+    tower1.showtower();
 }
