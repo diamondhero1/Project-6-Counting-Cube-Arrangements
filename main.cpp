@@ -16,11 +16,16 @@ int main() {
     cube c1 = cube();
     tunnel t1 = tunnel(1);
     room r1 = room(3);
-    cout << t1.getDirection() << endl;
     tower tower1 = tower(&c1, &t1, &r1);
     tower1.printtower();
     tower1.rotate90();
     tower1.printtower();
+
+    cube c2 = cube();
+    tunnel t2 = tunnel(2);
+    room r2 = room(4);
+    tower tower2 = tower(&r2, &t2, &c2);
+    cout << tower1.Equals(tower2) << endl;
     tower1.showtower();
     tower tower2 = tower(&t1, &t1, &r1);
     tower2.showtower();
