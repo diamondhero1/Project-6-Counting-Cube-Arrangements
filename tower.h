@@ -32,6 +32,8 @@ public:
 
     void printtower();
 
+    bool Equals(tower other);
+
     void showtower();
 
 private:

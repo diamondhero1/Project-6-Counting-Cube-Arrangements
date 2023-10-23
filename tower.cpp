@@ -23,7 +23,7 @@ void tower::verticalFlip(){
 void tower::rotate90(){
     for (int i = 0; i <= 2; ++i) {
         arrangement[i]->rotate90();
-        cout << arrangement[i]->getDirection() << endl;
+      //  cout << arrangement[i]->getDirection();
     }
 }
 
@@ -53,30 +53,48 @@ void tower::printtower(){
     cout << "." << endl;
 }
 
+bool tower::Equals(tower other) {
+    for (int y = 0; y <= 1; y++) {
+        for (int z = 0; z <= 3; z++) {
+            for (int x = 0; x <= 2; x++) {
+                if (other.arrangement[x]->getDirection() == arrangement[x]->getDirection()) {
+                } else {
+                    break;
+                }
+                if (x == 2) {
+                    return true;
+                }
+            }
+            rotate90();
+        }
+        verticalFlip();
+    }
+    return false;
+}
 
 void tower::showtower(){
     cout << "Tower from top to bottom:" << endl;
     for (int i = 0; i <= 2; ++i) {
         if (arrangement[i]->getDirection() == 0) {
-            cout << "[  Cube   ]" << endl;
+            cout << "[   Cube    ]" << endl;
     }
         if (arrangement[i]->getDirection() == 1) {
-            cout << "[Tunnel NS]" << endl;
+            cout << "[ Tunnel NS ]" << endl;
         }
         if (arrangement[i]->getDirection() == 2) {
-            cout << "[Tunnel EW]" << endl;
+            cout << "[ Tunnel EW ]" << endl;
         }
         if (arrangement[i]->getDirection() == 3) {
-            cout << "[ Room N  ]" << endl;
+            cout << "[  Room N   ]" << endl;
         }
         if (arrangement[i]->getDirection() == 4) {
-            cout << "[ Room E  ]" << endl;
+            cout << "[  Room E   ]" << endl;
         }
         if (arrangement[i]->getDirection() == 5) {
-            cout << "[ Room S  ]" << endl;
+            cout << "[  Room S   ]" << endl;
         }
         if (arrangement[i]->getDirection() == 6) {
-            cout << "[ Room W  ]" << endl;
+            cout << "[  Room W   ]" << endl;
         }
     }
 }
