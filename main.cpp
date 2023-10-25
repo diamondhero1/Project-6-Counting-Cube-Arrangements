@@ -26,6 +26,12 @@ int main() {
     tower tower2 = tower(&r2, &t2, &c2);
     cout << tower1.Equals(tower2) << endl;
     tower1.showtower();
+
+    cout << "Input for first tower\n";
+    userT1 = userTower();
+    cout << "Input for second tower\n";
+    userT2 = userTower();
+    cout << "Does tower 1 equal tower 2? " << userT1.Equals(userT2) << endl;
 }
 
 
