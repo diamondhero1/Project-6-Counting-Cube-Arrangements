@@ -53,15 +53,14 @@ void tower::printtower(){
 }
 
 bool tower::Equals(tower other) {
-    for(int y = 0; y<=1; y++) {
-        for(int z = 0; z<=3; z++) {
-            for(int x = 0; x<=2; x++) {
-                if(other.arrangement[x]->getDirection() == arrangement[x]->getDirection()) {
-                }
-                else {
+    for (int y = 0; y <= 1; y++) {
+        for (int z = 0; z <= 3; z++) {
+            for (int x = 0; x <= 2; x++) {
+                if (other.arrangement[x]->getDirection() == arrangement[x]->getDirection()) {
+                } else {
                     break;
                 }
-                if(x==2) {
+                if (x == 2) {
                     return true;
                 }
             }
@@ -70,6 +69,7 @@ bool tower::Equals(tower other) {
         verticalFlip();
     }
     return false;
+}
 
 
 void tower::showtower(){
