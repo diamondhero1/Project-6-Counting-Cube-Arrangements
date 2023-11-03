@@ -1,5 +1,5 @@
 // Created by fowle on 9/29/2023.
-// Modified by ya boi and Izzie
+// Modified by ya boi
 
 #include "cubes.h"
 #include "tower.h"
@@ -189,12 +189,9 @@ void generator() {
             //check if the new tower exists in the generator's list
             bool isIn = false;
             int i = 0;
-            while (i < 100) {
+            while (i < s) {
                 if (tow[i]->Equals(input1)) {
                     isIn = true;
-                    break;
-                }
-                else if (tow[i]->Equals(baseTower)){
                     break;
                 }
                 //iterate i
