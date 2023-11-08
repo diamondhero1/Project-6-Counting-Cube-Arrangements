@@ -15,10 +15,36 @@ tower::tower(cube *c1, cube *c2, cube *c3){
 //vertically flips tower by swapping order of 1st and 3rd item in the array
 void tower::verticalFlip(){
     cube *temp = arrangement[0];
+    if(arrangement[0]->getDirection() == 4) {
+        arrangement[0]->rotate90();
+        arrangement[0]->rotate90();
+    }
+    else if(arrangement[0]->getDirection() == 6){
+        arrangement[0]->rotate90();
+        arrangement[0]->rotate90();
+    }
+
+    if(arrangement[1]->getDirection() == 4) {
+        arrangement[1]->rotate90();
+        arrangement[1]->rotate90();
+    }
+    else if(arrangement[1]->getDirection() == 6){
+        arrangement[1]->rotate90();
+        arrangement[1]->rotate90();
+    }
+
+    if(arrangement[2]->getDirection() == 4) {
+        arrangement[2]->rotate90();
+        arrangement[2]->rotate90();
+    }
+    else if(arrangement[2]->getDirection() == 6){
+        arrangement[2]->rotate90();
+        arrangement[2]->rotate90();
+    }
+
     arrangement[0] = arrangement[2];
     arrangement[2] = temp;
 }
-
 //rotates tower 90 degrees by rotating each cube in it (calling the rotation function for all 3 cubes)
 void tower::rotate90(){
     for (int i = 0; i <= 2; ++i) {
