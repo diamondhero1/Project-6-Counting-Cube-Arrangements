@@ -117,15 +117,25 @@ tower * userTower(cube* cubes[]){
                 cubes[i] = new room(5);
             } else if (userInput[1] == 'W') {
                 cubes[i] = new room(6);
+            } else {
+                cout<<"Invalid syntax for a room: Please put a direction" <<endl;
+                i--;
             }
         }
 
         else if (userInput[0] == 'T') {
-            if (userInput[1] == 'N' || userInput[1] == 'S') {
+            if (userInput[1] == 'N' && userInput[2] == 'S') {
                 cubes[i] = new tunnel(1);
-            } else {
+            } else if(userInput[1] == 'E' && userInput[2] == 'W'){
                 cubes[i] = new tunnel(2);
+            } else {
+                cout<<"Invalid syntax for a tunnel: Please put a direction" <<endl;
+                i--;
             }
+        }
+        else{
+            cout << "You have entered a invalid input to create a cube" <<endl;
+            i--;
         }
     }
     //
@@ -136,21 +146,8 @@ tower * userTower(cube* cubes[]){
 }
 
 int main() {
-    cube c1 = cube();
-    tunnel t1 = tunnel(1);
-    room r1 = room(3);
-    tower tower1 = tower(&c1, &t1, &r1);
-    tower1.printtower();
-    tower1.verticalFlip();
-    tower1.printtower();
 
-    cube c2 = cube();
-    tunnel t2 = tunnel(2);
-    room r2 = room(4);
-    tower tower2 = tower(&r2, &t2, &c2);
-    cout << tower1.Equals(tower2) << endl;
-    tower1.showtower();
-    /*cube* cubes[3];
+    cube* cubes[3];
     userTower(cubes);
     tower input1 = tower(cubes[0],cubes[1],cubes[2]);
     input1.showtower();
@@ -158,7 +155,7 @@ int main() {
     userTower(cubes2);
     tower input2 = tower( cubes2[0], cubes2[1], cubes2[2]);
 
-    cout << input1.Equals(input2) << endl;*/
+    cout << input1.Equals(input2) << endl;
     generator();
 }
 
