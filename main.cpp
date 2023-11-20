@@ -101,7 +101,7 @@ tower * userTower(cube* cubes[]){
     for (int i = 0; i < 3; i++) {
         cout << "Enter cube data: Cube, Room, Tunnel, & Direction: N, E, S, W. Format example: C. RN. TEW." << endl;
         string userInput;
-        cin >> userInput;
+        getline(cin, userInput);
 
         //process user input into a new cube/room/tunnel
         if (userInput[0] == 'C') {
