@@ -146,16 +146,24 @@ tower * userTower(cube* cubes[]){
 }
 
 int main() {
-
+    cout << "Step 1: Enter 3 separate cubes for tower 1.\n";
     cube* cubes[3];
     userTower(cubes);
     tower input1 = tower(cubes[0],cubes[1],cubes[2]);
     input1.showtower();
+
+    cout << "Step 2: Enter 3 separate cubes for tower 2.\n";
     cube* cubes2[3];
     userTower(cubes2);
     tower input2 = tower( cubes2[0], cubes2[1], cubes2[2]);
 
-    cout << input1.Equals(input2) << endl;
+    int equality = input1.Equals(input2);
+    if (equality == 0){
+        cout << "They are not equal.\n";
+    }
+    else{
+        cout << "They are equal.\n";
+    }
     generator();
 }
 
